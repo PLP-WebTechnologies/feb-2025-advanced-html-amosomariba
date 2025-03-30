@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn the basics of HTML, CSS, and JavaScript for web development. A beginner-friendly guide.">
+
+    <meta name="author" content="Amos">
+    <title>Creating an HTML file</title>
+
+    <style>
+
+        table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+
+
+}
+        th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+        tr:nth-child(even) {    
+    background-color: #dddddd;
+}
+
+        h2 {
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        img {
+            display: block;
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        ol {
+            margin: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        li {
+            margin: 5px 0;
+            font-family: Arial, sans-serif;
+            color: #555;
+        }
+        li:hover {
+            color: #007BFF;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>My Ordered list</h2>
+
+    <ol type="I">
+        <li>Learn HTML</li>
+        <li>Learn Web Development</li>
+        <li>Learn Javascript</li>
+        <li>Learn CSS</li>
+
+    </ol>
+
+    <img src="https://images.pexels.com/photos/7988114/pexels-photo-7988114.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="A coding screen" width="500">
+
+    <!-- Table section -->
+
+    <h2>This is my table with contacts</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Emails</th>
+        </tr>
+        <tr>
+            <td>Amos Omariba</td>
+            <td>Kisii</td>
+            <td>0721234567</td>
+            <td>amo@mail.com</td>
+        </tr>
+        <tr>
+            <td>Cliff Ombasa</td>
+            <td>Nyamira</td>
+            <td>0721234567</td>
+            <td>amo@mail.com</td>
+        </tr>
+        <tr>
+            <td>Sydney Otieno</td>
+            <td>Siaya</td>
+            <td>0751934567</td>
+            <td>cliff@mail.com</td>
+        </tr>
+        <tr>
+            <td>Talam Lagat</td>
+            <td>Bomet</td>
+            <td>0723454567</td>
+            <td>lagat@mail.com</td>
+        </tr>
+        <tr>
+            <td>Amos Omariba</td>
+            <td>Kisii</td>
+            <td>0721234567</td>
+            <td>amo@mail.com</td>
+        </tr>
+        
+    </table>
+
+    <h2>This is my registration form</h2>
+    <form action="#" method="post">
+         <!-- Name Field -->
+         <label for="name">Full Name:</label>
+         <input type="text" id="name" name="name" placeholder="Enter your name" required> <br><br>
+         
+         <!-- Email Field -->
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" placeholder="Enter your email" required> <br><br>
+         
+         <!-- Password Field -->
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6"> <br><br>
+         
+         <!-- Date of Birth Field -->
+         <label for="dob">Date of Birth:</label>
+         <input type="date" id="dob" name="dob" required> <br><br>
+         
+         <!-- Gender Selection (Radio Buttons) -->
+         <label>Gender:</label> <br>
+         <input type="radio" id="male" name="gender" value="male" required>
+         <label for="male">Male</label>
+         <input type="radio" id="female" name="gender" value="female" required>
+         <label for="female">Female</label>
+         <input type="radio" id="other" name="gender" value="other" required>
+         <label for="other">Other</label> <br><br>
+         
+         <!-- Country Dropdown -->
+         <label for="country">Select Country:</label>
+         <select id="country" name="country" required>
+             <option value="">-- Select Country --</option>
+             <option value="usa">United States</option>
+             <option value="uk">United Kingdom</option>
+             <option value="canada">Canada</option>
+             <option value="australia">Australia</option>
+             <option value="other">Other</option>
+         </select> <br><br>
+         
+         <!-- Terms and Conditions (Checkbox) -->
+         <input type="checkbox" id="terms" name="terms" required>
+         <label for="terms">I agree to the terms and conditions</label> <br><br>
+         
+         <!-- Submit Button -->
+         <button type="submit">Submit</button>
+
+    </form>
+
+
+    
+</body>
+</html>
